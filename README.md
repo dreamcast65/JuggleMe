@@ -38,3 +38,7 @@ We will use Subprocess to execute and receive our reverse shell without having t
 * Time - https://docs.python.org/3/library/time.html
 
 The time library will only be used to wait a few seconds for requests and responses to come back.
+
+
+## Solution Script
+JuggleMe.py - https://github.com/dreamcast65/JuggleMe/blob/main/JuggleMe.py
