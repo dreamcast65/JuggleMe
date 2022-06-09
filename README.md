@@ -9,6 +9,9 @@ Find your IP address of the application by running nmap:
 
 If you do not have VMware Fusion or VMware Workstation the application is available at http://da45-107-181-178-100.ngrok.io/Login.php.  You will need to install ngrok to receive your reverse shell and will have to either modify the script or set up ngrok with a netcat listener on the side.  You can sign up and download ngrok here: https://ngrok.com/ .  If you decided to use the hosted application, please be sure to use a unique name for your webshell.
 
+	ngrok config add-authtoken TOKEN 
+	ngrok tcp LPORT
+
 The script we will be creating will be done in Python.  You'll need to pip install the libraries in use. 
 ##Requirements
 
