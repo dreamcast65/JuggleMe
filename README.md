@@ -5,7 +5,7 @@ https://drive.google.com/file/d/1D79WJ7gtECDag9_kxquUoUGX4fDHaJ-t/view?usp=shari
 
 If you do not have VMware Fusion or VMware Workstation the application is available at https://da45-107-181-178-100.ngrok.io/Login.php.  You will need to install ngrok to receive your reverse shell and will have to either modify the script or set up ngrok with a netcat listener on the side.  You can sign up and download ngrok here: https://ngrok.com/
 
-## Vulnerabilities
+# Vulnerabilities
 * PHP Type Juggling - Authentication Bypass
 * File Upload - Remote Code Execution and File Extension Bypass
 * Local File Inclusion - Executing Extension Bypass technique
@@ -55,6 +55,8 @@ This will be used for parsing arguments.
 
 ## Useful Burp Extension
 * Copy As Python-Requests - https://portswigger.net/bappstore/b324647b6efa4b6a8f346389730df160
+
+# Time To Code
 
 ## __init__ 
 A Sample class with __init__ method.  This is similar to a constructor in C++ and Java and will help with our arguments.
