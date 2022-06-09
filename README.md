@@ -51,7 +51,8 @@ This will be used for parsing arguments.
 * Copy As Python-Requests - https://portswigger.net/bappstore/b324647b6efa4b6a8f346389730df160
 
 ## __init__ 
-# A Sample class with init method 
+A Sample class with __init__ method.  This is similar to a constructor in C++ and Java and will help with our arguments.
+    
     class Person:  
 
     # init method or constructor   
@@ -62,8 +63,8 @@ This will be used for parsing arguments.
     def say_hi(self):  
         print('Hello, my name is', self.name)  
       
-p = Person('Nikhil')  
-p.say_hi() 
+    p = Person('Nikhil')  
+    p.say_hi() 
 
 ## Solution Script
 JuggleMe.py - https://github.com/dreamcast65/JuggleMe/blob/main/JuggleMe.py
