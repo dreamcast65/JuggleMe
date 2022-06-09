@@ -17,6 +17,11 @@ Vulnerable Code : https://gist.github.com/dreamcast65/1d7fd96893d70d4c85e649b358
 * Owasp Type Juggling - https://owasp.org/www-pdf-archive/PHPMagicTricks-TypeJuggling.pdf
 * PHP Magic Hashes - https://github.com/spaze/hashes
 
+## File Upload
+* File Extension Bypass Cheat Sheet - https://book.hacktricks.xyz/pentesting-web/file-upload
+
+While it may be beneficial to test for other types of file extension bypasses the bypass we will use for this workshop will be .php.png
+
 ## Important Python Libraries
 * Requests - https://requests.readthedocs.io/en/latest/
 
