@@ -58,7 +58,7 @@ This will be used for parsing arguments.
 
 # Time To Code
 
-## __init__ 
+## def __init__ 
 A Sample class with __init__ method.  This is similar to a constructor in C++ and Java and will help with our arguments.
     
     class Person:  
@@ -73,6 +73,35 @@ A Sample class with __init__ method.  This is similar to a constructor in C++ an
       
     p = Person('Nikhil')  
     p.say_hi() 
+## def exploitation(self):
+Variables
+	
+	variables ={
+		"username":login,
+		"password":password,
+		"etc":etc
+		....
+		....
+		}
+Session
+
+	r = requests.Session();
+GET
+
+	r1 = r.get(url);
+
+POST
+
+	r2 = r.post(url, data=variables)
+UPLOAD
+
+	r.post(url, files=files) // files above under file upload vulnerability
+Proxies
+
+	proxies={
+	'http':'http://127.0.0.1:8081'
+	}
+It may be beneficial to add proxies to the POST requests if you'd like to intercept a request with burp and inspect that it looks like the POST request you are expecting.
 
 ## Solution Script
 JuggleMe.py - https://github.com/dreamcast65/JuggleMe/blob/main/JuggleMe.py
