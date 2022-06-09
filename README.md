@@ -12,15 +12,19 @@ If you do not have VMware Fusion or VMware Workstation the application is availa
 
 ## PHP Type Juggling
 * PHP Loose Comparison - https://www.php.net/manual/en/types.comparisons.php
-
-Vulnerable Code : https://gist.github.com/dreamcast65/1d7fd96893d70d4c85e649b358e47dbc#file-loose-comparison
 * Owasp Type Juggling - https://owasp.org/www-pdf-archive/PHPMagicTricks-TypeJuggling.pdf
 * PHP Magic Hashes - https://github.com/spaze/hashes
+
+Vulnerable Code : https://gist.github.com/dreamcast65/1d7fd96893d70d4c85e649b358e47dbc#file-loose-comparison
 
 ## File Upload
 * File Extension Bypass Cheat Sheet - https://book.hacktricks.xyz/pentesting-web/file-upload
 
 While it may be beneficial to test for other types of file extension bypasses the bypass we will use for this workshop will be .php.png
+
+Vulnerable Code : https://gist.github.com/dreamcast65/c91bd12384d33b2fb4067cd9bc989be0#file-file-upload-bypass
+
+## Local file Inclusion
 
 ## Important Python Libraries
 * Requests - https://requests.readthedocs.io/en/latest/
@@ -28,4 +32,9 @@ While it may be beneficial to test for other types of file extension bypasses th
 We will be using the Requests library to create a session object to make GET and POST requests which we will use to log in, upload a file, and access that file.
 
 * Subprocess - https://docs.python.org/3/library/subprocess.html
+
+We will use Subprocess to execute and receive our reverse shell without having to start a netcat listener in another terminal.
+
 * Time - https://docs.python.org/3/library/time.html
+
+The time library will only be used to wait a few seconds for requests and responses to come back.
