@@ -12,6 +12,8 @@ If you do not have VMware Fusion or VMware Workstation the application is availa
 
 ## PHP Type Juggling
 * PHP Loose Comparison - https://www.php.net/manual/en/types.comparisons.php
+
+Example Code : https://gist.github.com/dreamcast65/1d7fd96893d70d4c85e649b358e47dbc#file-loose-comparison
 * Owasp Type Juggling - https://owasp.org/www-pdf-archive/PHPMagicTricks-TypeJuggling.pdf
 * PHP Magic Hashes - https://github.com/spaze/hashes
 
