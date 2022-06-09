@@ -16,6 +16,6 @@ If you do not have VMware Fusion or VMware Workstation the application is availa
 * PHP Magic Hashes - https://github.com/spaze/hashes
 
 ## Important Python Libraries
-* Requests
-* Subprocess
-* Time
+* Requests - https://requests.readthedocs.io/en/latest/
+* Subprocess - https://docs.python.org/3/library/subprocess.html
+* Time - https://docs.python.org/3/library/time.html
