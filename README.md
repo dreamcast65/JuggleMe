@@ -17,6 +17,7 @@ If you do not have VMware Fusion or VMware Workstation the application is availa
 
 ## Important Python Libraries
 * Requests - https://requests.readthedocs.io/en/latest/
+
 We will be using the Requests library to create a session object to make GET and POST requests which we will use to log in, upload a file, and access that file.
 
 * Subprocess - https://docs.python.org/3/library/subprocess.html
