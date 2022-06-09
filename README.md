@@ -59,6 +59,8 @@ This will be used for parsing arguments.
 
 # Time To Code
 
+### Starting code
+
 	#!/usr/bin/python
 	import sys
 	import argparse
