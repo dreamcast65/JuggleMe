@@ -99,8 +99,11 @@ A Sample class with __init__ method.  This is similar to a constructor in C++ an
     p = Person('Nikhil')  
     p.say_hi() 
 ## def exploitation(self):
-### Session - Requests
 
+
+This segment of code will be the meat of what we are trying to get done.  We will first need to create a session.  Then from there we will need to make a post request with the login data required to successfully log in.  From there, we will be uploading a file that will be a web shell.  After that we will be creating a listener with netcat and then using the LFI vulnerability to navigate to the webshell that we have uploaded with a one line reverse shell to execute a callback to our listener.
+
+### Session - Requests
 Conditional Statements and Time
 
 It may be good to add conditional statements to see if the request was a success or not. Putting a pause in between requests as well.
