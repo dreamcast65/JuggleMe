@@ -102,6 +102,10 @@ Proxies
 	'http':'http://127.0.0.1:8081'
 	}
 It may be beneficial to add proxies to the POST requests if you'd like to intercept a request with burp and inspect that it looks like the POST request you are expecting.
+## def get_args():
 
+	parser = argparse.ArgumentParser(description='JuggleMe v 0.1.0 - Remote Code Execution (RCE) (Authenticated)')
+	parser.add_argument('-t', '--target', dest="url", required=True, action='store', help='Target IP')
+	
 ## Solution Script
 JuggleMe.py - https://github.com/dreamcast65/JuggleMe/blob/main/JuggleMe.py
