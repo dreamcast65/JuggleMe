@@ -3,7 +3,7 @@
 ## Link to download Vulnerable server
 https://drive.google.com/file/d/1D79WJ7gtECDag9_kxquUoUGX4fDHaJ-t/view?usp=sharing
 
-If you do not have VMware Fusion or VMware Workstation the application is available at https://436e-162-253-68-206.ngrok.io/Login.php.  You will need to install ngrok to receive your reverse shell and will have to either modify the script or set up ngrok with a netcat listener on the side.  You can sign up and download ngrok here: https://ngrok.com/
+If you do not have VMware Fusion or VMware Workstation the application is available at https://5035-162-253-68-206.ngrok.io/Login.php.  You will need to install ngrok to receive your reverse shell and will have to either modify the script or set up ngrok with a netcat listener on the side.  You can sign up and download ngrok here: https://ngrok.com/
 
 ## Vulnerabilities
 * PHP Type Juggling - Authentication Bypass
