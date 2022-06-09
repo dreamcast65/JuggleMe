@@ -12,18 +12,19 @@ if(isset($_POST['login']))   // it checks whether the user clicked login button 
      $user = $_POST['user'];
      $pass = hash('sha256',$_POST['pass']);
 
-      if($user == "admin" && $pass == hash('sha256','Sol7trnk00'))  // username is  set to "Ank"  and Password   
-         {                                   // is 1234 by default     
+      if($user == "admin" && $pass == hash('sha256','Sol7trnk00'))  
+         {                                      
 
           $_SESSION['use']=$user;
 
 
-         echo '<script type="text/javascript"> window.open("home.php","_self");</script>';            //  On Successful Login redirects to home.php
+         echo '<script type="text/javascript"> window.open("home.php","_self");</script>';            
 
         }
 
         else
         {
+            header("HTTP/1.1 403 Unauthorized");
             echo "invalid UserName or Password";        
         }
 }
