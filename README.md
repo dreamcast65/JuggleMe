@@ -74,6 +74,7 @@ A Sample class with __init__ method.  This is similar to a constructor in C++ an
     p = Person('Nikhil')  
     p.say_hi() 
 ## def exploitation(self):
+### Session - Requests
 Variables
 	
 	variables ={
@@ -101,7 +102,9 @@ Proxies
 	proxies={
 	'http':'http://127.0.0.1:8081'
 	}
-It may be beneficial to add proxies to the POST requests if you'd like to intercept a request with burp and inspect that it looks like the POST request you are expecting.
+It may be beneficial to add proxies to the POST requests if you'd like to intercept a request with burp and inspect that it looks like the POST request you are expecting.	
+### Reverse Shell and Listener
+
 ## def get_args():
 
 	parser = argparse.ArgumentParser(description='JuggleMe v 0.1.0 - Remote Code Execution (RCE) (Authenticated)')
