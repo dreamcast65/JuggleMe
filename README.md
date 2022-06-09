@@ -25,6 +25,9 @@ While it may be beneficial to test for other types of file extension bypasses th
 Vulnerable Code : https://gist.github.com/dreamcast65/c91bd12384d33b2fb4067cd9bc989be0#file-file-upload-bypass
 
 ## Local file Inclusion
+Owasp LFI - https://owasp.org/www-project-web-security-testing-guide/v42/4-Web_Application_Security_Testing/07-Input_Validation_Testing/11.1-Testing_for_Local_File_Inclusion
+LFI cheatsheet - https://highon.coffee/blog/lfi-cheat-sheet/
+https://gist.github.com/dreamcast65/4dbddb89d75eec29383b8497d615eaa3#file-local-file-inclusion
 
 ## Important Python Libraries
 * Requests - https://requests.readthedocs.io/en/latest/
