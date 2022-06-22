@@ -19,6 +19,7 @@ The script we will be creating will be done in Python.  You'll need to pip insta
 	pip install pyfiglet
 	pip install time
 	pip install subprocess
+	pip install argparse
 
 # Vulnerabilities
 * PHP Type Juggling - Authentication Bypass
