@@ -181,12 +181,5 @@ OR
 	exp = Exploit(target_ip, other_args)
 	exp.exploitation()
 	
-# Exercise
-## 1. Import the Libraries needed
-
-## 2. Define Functions
-
-## 3. Assign Variables
-
 ## Solution Script
 JuggleMe.py - https://github.com/dreamcast65/JuggleMe/blob/main/JuggleMe.py
