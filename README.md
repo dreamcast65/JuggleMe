@@ -77,7 +77,6 @@ This will be used for parsing arguments.
 ### Starting code
 
 	#!/usr/bin/python
-	import sys
 	import argparse
 	import pyfiglet
 	import requests
