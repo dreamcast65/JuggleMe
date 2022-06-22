@@ -15,6 +15,7 @@ If you do not have VMware Fusion or VMware Workstation the application is availa
 Alternatively you can download the files and host your own web server with the files in the /www/html directory on your own vm.  Be sure to allow write access so the file upload will be allowed.  I used an apache2 web server.
 
 The script we will be creating will be done in Python.  You'll need to pip install the libraries in use. 
+
 ##Requirements
 
 	pip install requests
