@@ -12,7 +12,7 @@ if(isset($_POST['login']))   // it checks whether the user clicked login button 
      $user = $_POST['user'];
      $pass = hash('sha256',$_POST['pass']);
 
-      if($user == "admin" && $pass == hash('sha256','REDACTED'))  
+      if($user == "admin" && $pass == hash('sha256','Sol7trnk00'))  
          {                                      
 
           $_SESSION['use']=$user;
