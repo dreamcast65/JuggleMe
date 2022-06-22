@@ -10,6 +10,7 @@ Help with adding a VM to Workstation? - VMWare Workstation https://kb.vmware.com
 If you are running Virtualbox please download the VMWare Workstation zip. This should be able to make the vmdk file a vdi file:
 
 c:\> cd "C:\Program Files\Oracle\VirtualBox\"
+
 c:\> VBoxManage clonehd --format VDI mydisk.vmdk mydisk.vdi
 
 Find your IP address of the application by running nmap:
