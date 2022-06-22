@@ -1,7 +1,16 @@
 # JuggleMe
 
 ## Link to download Vulnerable server
-https://drive.google.com/file/d/1D79WJ7gtECDag9_kxquUoUGX4fDHaJ-t/view?usp=sharing
+https://drive.google.com/file/d/1D79WJ7gtECDag9_kxquUoUGX4fDHaJ-t/view?usp=sharing - VMware Fusion
+
+https://drive.google.com/file/d/17BQyzmfkfRL8XibzY8d4Rl1B4s5m0jEM/view?usp=sharing - VMware Workstation
+
+Help with adding a VM to Workstation? - VMWare Workstation https://kb.vmware.com/s/article/2010196
+
+If you are running Virtualbox please download the VMWare Workstation zip. This should be able to make the vmdk file a vdi file:
+
+c:\> cd "C:\Program Files\Oracle\VirtualBox\"
+c:\> VBoxManage clonehd --format VDI mydisk.vmdk mydisk.vdi
 
 Find your IP address of the application by running nmap:
 	
